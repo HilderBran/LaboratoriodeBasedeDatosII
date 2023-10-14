@@ -9,6 +9,8 @@ RETURN
         IDProducto,
         IDPedido,
         Cantidad,
+		PrecioUnidad,
+		descuetoUnidad,
         (PrecioUnidad - DescuetoUnidad) AS PrecioTotal
     FROM
         [dbo].[Compras]
@@ -16,4 +18,3 @@ RETURN
 
 SELECT *
 FROM [dbo].[SumarPrecioUnidadYDescuentoUnidad]();
-
